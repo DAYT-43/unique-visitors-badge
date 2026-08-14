@@ -1,0 +1,38 @@
+name: Update unique visitors badge
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # ежедневно в 06:00 UTC
+  workflow_dispatch:      # ручной запуск
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-badge
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Update traffic history and badge
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          TARGET_REPO: DAYT-43/DAYT-43
+        run: python scripts/update_traffic.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add traffic_history.json badge.json
+          git diff --cached --quiet || git commit -m "chore: update traffic badge ($(date -u +%Y-%m-%d))"
+          git push
