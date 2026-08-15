@@ -2,64 +2,64 @@
   "generated": "2026-08-15",
   "period": {
     "start": "2026-08-04",
-    "end": "2026-08-13",
-    "samples": 2
+    "end": "2026-08-15",
+    "samples": 4
   },
   "all": {
-    "samples": 2,
+    "samples": 4,
     "start": "2026-08-04",
-    "end": "2026-08-13",
+    "end": "2026-08-15",
     "views": {
-      "last_count": 2,
-      "last_uniques": 1,
-      "max_count": 2,
-      "max_uniques": 1,
-      "sum_count": 3
+      "last_count": 4,
+      "last_uniques": 2,
+      "max_count": 4,
+      "max_uniques": 2,
+      "sum_count": 10
     },
     "clones": {
-      "last_count": 2,
-      "last_uniques": 2,
-      "max_count": 2,
-      "max_uniques": 2,
-      "sum_count": 2
+      "last_count": 22,
+      "last_uniques": 15,
+      "max_count": 22,
+      "max_uniques": 15,
+      "sum_count": 26
     }
   },
   "last_30d": {
-    "samples": 2,
+    "samples": 4,
     "start": "2026-08-04",
-    "end": "2026-08-13",
+    "end": "2026-08-15",
     "views": {
-      "last_count": 2,
-      "last_uniques": 1,
-      "max_count": 2,
-      "max_uniques": 1,
-      "sum_count": 3
+      "last_count": 4,
+      "last_uniques": 2,
+      "max_count": 4,
+      "max_uniques": 2,
+      "sum_count": 10
     },
     "clones": {
-      "last_count": 2,
-      "last_uniques": 2,
-      "max_count": 2,
-      "max_uniques": 2,
-      "sum_count": 2
+      "last_count": 22,
+      "last_uniques": 15,
+      "max_count": 22,
+      "max_uniques": 15,
+      "sum_count": 26
     }
   },
   "last_7d": {
-    "samples": 1,
+    "samples": 3,
     "start": "2026-08-13",
-    "end": "2026-08-13",
+    "end": "2026-08-15",
     "views": {
-      "last_count": 2,
-      "last_uniques": 1,
-      "max_count": 2,
-      "max_uniques": 1,
-      "sum_count": 2
+      "last_count": 4,
+      "last_uniques": 2,
+      "max_count": 4,
+      "max_uniques": 2,
+      "sum_count": 9
     },
     "clones": {
-      "last_count": 2,
-      "last_uniques": 2,
-      "max_count": 2,
-      "max_uniques": 2,
-      "sum_count": 2
+      "last_count": 22,
+      "last_uniques": 15,
+      "max_count": 22,
+      "max_uniques": 15,
+      "sum_count": 26
     }
   },
   "trend": [
@@ -72,6 +72,16 @@
       "date": "2026-08-13",
       "views_uniques": 1,
       "clones_uniques": 2
+    },
+    {
+      "date": "2026-08-14",
+      "views_uniques": 2,
+      "clones_uniques": 2
+    },
+    {
+      "date": "2026-08-15",
+      "views_uniques": 2,
+      "clones_uniques": 15
     }
   ]
 }
