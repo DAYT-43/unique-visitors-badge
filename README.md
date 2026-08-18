@@ -20,6 +20,10 @@ github_url: "https://github.com/DAYT-43/unique-visitors-badge"
 
 Этот проект решает проблему честно: GitHub Traffic API возвращает реальные `uniques` (уникальные посетители) и `count` (просмотры) за последние 14 дней, а GitHub Actions раз в день снимает срез и накапливает историю. На профиле стоят **два бейджа**: «views (14d)» — просмотры за окно 14 дней (растут с каждым визитом) и «unique visitors (14d)» — честные уникальные посетители. Оба в стиле shields.io — как остальные бейджи профиля.
 
+**Как это выглядит (результат):**
+
+![Результат: бейджи посетителей профиля](examples/badges-result.svg)
+
 ⭐ **Полезно? Поставь звезду** — автору приятно и проекту больше доверия.
 🍴 **Нужно для своего профиля? Форкни** и следуй инструкции ниже.
 💡 **Есть идея? Открой Issue или Pull Request** — автор отвечает.
@@ -65,6 +69,8 @@ unique-visitors-badge/
 ├── scripts/
 │   ├── update_traffic.py        # сбор Traffic API + генерация badge.json и views.json
 │   └── analytics.py             # аналитика из истории + генерация analytics.json
+├── examples/
+│   └── badges-result.svg        # скрин результата (бейджи на профиле)
 ├── badge.json                   # «unique visitors (14d)» для shields.io endpoint
 ├── views.json                   # «views (14d)» для shields.io endpoint
 ├── analytics.json               # лаконичные метрики за 7/30 дней / всё время
