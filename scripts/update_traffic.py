@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Сбор данных GitHub Traffic API и генерация бейджа уникальных посетителей.
+"""Сбор данных GitHub Traffic API и генерация бейджей посетителей.
 
 Берёт срез traffic/views (и clones) целевого репозитория, накапливает историю
 в traffic_history.json (GitHub хранит трафик только 14 дней — историю ведём сами)
-и генерирует badge.json в формате shields.io endpoint badge.
+и генерирует два файла в формате shields.io endpoint badge:
+- badge.json  — «unique visitors (14d)» (уникальные посетители за окно 14 дней);
+- views.json  — «views (14d)» (просмотры за окно 14 дней).
 
 Используется в GitHub Actions (см. .github/workflows/update-badge.yml).
 Требует env: GH_TOKEN (PAT с доступом к целевому репозиторию), TARGET_REPO.
@@ -21,6 +23,7 @@ TOKEN = os.environ.get("GH_TOKEN", "")
 BASE_DIR = Path(__file__).resolve().parent.parent
 HISTORY_FILE = BASE_DIR / "traffic_history.json"
 BADGE_FILE = BASE_DIR / "badge.json"
+VIEWS_BADGE_FILE = BASE_DIR / "views.json"
 
 
 def api_get(path: str) -> dict:
@@ -66,13 +69,24 @@ def main() -> None:
         "label": "unique visitors (14d)",
         "message": str(views.get("uniques", 0)),
         "color": "blue",
-        "cacheSeconds": 86400,
+        "cacheSeconds": 3600,
     }
     BADGE_FILE.write_text(
         json.dumps(badge, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    print(f"{today}: unique visitors = {views.get('uniques', 0)}")
+    views_badge = {
+        "schemaVersion": 1,
+        "label": "views (14d)",
+        "message": str(views.get("count", 0)),
+        "color": "blue",
+        "cacheSeconds": 3600,
+    }
+    VIEWS_BADGE_FILE.write_text(
+        json.dumps(views_badge, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"{today}: unique visitors = {views.get('uniques', 0)}, views = {views.get('count', 0)}")
 
 
 if __name__ == "__main__":
