@@ -1,65 +1,65 @@
 {
-  "generated": "2026-08-27",
+  "generated": "2026-08-28",
   "period": {
     "start": "2026-08-04",
-    "end": "2026-08-27",
-    "samples": 16
+    "end": "2026-08-28",
+    "samples": 17
   },
   "all": {
-    "samples": 16,
+    "samples": 17,
     "start": "2026-08-04",
-    "end": "2026-08-27",
+    "end": "2026-08-28",
     "views": {
-      "last_count": 4,
+      "last_count": 5,
       "last_uniques": 1,
       "max_count": 5,
       "max_uniques": 2,
-      "sum_count": 62
+      "sum_count": 67
     },
     "clones": {
-      "last_count": 48,
+      "last_count": 49,
       "last_uniques": 32,
-      "max_count": 48,
+      "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 583
+      "sum_count": 632
     }
   },
   "last_30d": {
-    "samples": 16,
+    "samples": 17,
     "start": "2026-08-04",
-    "end": "2026-08-27",
+    "end": "2026-08-28",
     "views": {
-      "last_count": 4,
+      "last_count": 5,
       "last_uniques": 1,
       "max_count": 5,
       "max_uniques": 2,
-      "sum_count": 62
+      "sum_count": 67
     },
     "clones": {
-      "last_count": 48,
+      "last_count": 49,
       "last_uniques": 32,
-      "max_count": 48,
+      "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 583
+      "sum_count": 632
     }
   },
   "last_7d": {
     "samples": 8,
-    "start": "2026-08-20",
-    "end": "2026-08-27",
+    "start": "2026-08-21",
+    "end": "2026-08-28",
     "views": {
-      "last_count": 4,
+      "last_count": 5,
       "last_uniques": 1,
-      "max_count": 4,
+      "max_count": 5,
       "max_uniques": 1,
-      "sum_count": 32
+      "sum_count": 33
     },
     "clones": {
-      "last_count": 48,
+      "last_count": 49,
       "last_uniques": 32,
-      "max_count": 48,
+      "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 379
+      "sum_count": 382
     }
   },
   "trend": [
@@ -140,6 +140,11 @@
     },
     {
       "date": "2026-08-27",
+      "views_uniques": 1,
+      "clones_uniques": 32
+    },
+    {
+      "date": "2026-08-28",
       "views_uniques": 1,
       "clones_uniques": 32
     }
