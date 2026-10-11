@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "period": {
     "start": "2026-08-04",
-    "end": "2026-10-10",
-    "samples": 60
+    "end": "2026-10-11",
+    "samples": 61
   },
   "all": {
-    "samples": 60,
+    "samples": 61,
     "start": "2026-08-04",
-    "end": "2026-10-10",
+    "end": "2026-10-11",
     "views": {
       "last_count": 0,
       "last_uniques": 0,
@@ -21,45 +21,45 @@
       "last_uniques": 5,
       "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 1112
+      "sum_count": 1118
     }
   },
   "last_30d": {
     "samples": 31,
-    "start": "2026-09-10",
-    "end": "2026-10-10",
-    "views": {
-      "last_count": 0,
-      "last_uniques": 0,
-      "max_count": 3,
-      "max_uniques": 1,
-      "sum_count": 13
-    },
-    "clones": {
-      "last_count": 6,
-      "last_uniques": 5,
-      "max_count": 18,
-      "max_uniques": 14,
-      "sum_count": 265
-    }
-  },
-  "last_7d": {
-    "samples": 8,
-    "start": "2026-10-03",
-    "end": "2026-10-10",
+    "start": "2026-09-11",
+    "end": "2026-10-11",
     "views": {
       "last_count": 0,
       "last_uniques": 0,
       "max_count": 1,
       "max_uniques": 1,
-      "sum_count": 6
+      "sum_count": 10
+    },
+    "clones": {
+      "last_count": 6,
+      "last_uniques": 5,
+      "max_count": 15,
+      "max_uniques": 12,
+      "sum_count": 253
+    }
+  },
+  "last_7d": {
+    "samples": 8,
+    "start": "2026-10-04",
+    "end": "2026-10-11",
+    "views": {
+      "last_count": 0,
+      "last_uniques": 0,
+      "max_count": 1,
+      "max_uniques": 1,
+      "sum_count": 5
     },
     "clones": {
       "last_count": 6,
       "last_uniques": 5,
       "max_count": 6,
       "max_uniques": 5,
-      "sum_count": 30
+      "sum_count": 32
     }
   },
   "trend": [
@@ -360,6 +360,11 @@
     },
     {
       "date": "2026-10-10",
+      "views_uniques": 0,
+      "clones_uniques": 5
+    },
+    {
+      "date": "2026-10-11",
       "views_uniques": 0,
       "clones_uniques": 5
     }
