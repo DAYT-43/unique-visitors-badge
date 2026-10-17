@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-17",
   "period": {
     "start": "2026-08-04",
-    "end": "2026-10-16",
-    "samples": 66
+    "end": "2026-10-17",
+    "samples": 67
   },
   "all": {
-    "samples": 66,
+    "samples": 67,
     "start": "2026-08-04",
-    "end": "2026-10-16",
+    "end": "2026-10-17",
     "views": {
       "last_count": 0,
       "last_uniques": 0,
@@ -21,13 +21,13 @@
       "last_uniques": 7,
       "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 1150
+      "sum_count": 1158
     }
   },
   "last_30d": {
     "samples": 31,
-    "start": "2026-09-16",
-    "end": "2026-10-16",
+    "start": "2026-09-17",
+    "end": "2026-10-17",
     "views": {
       "last_count": 0,
       "last_uniques": 0,
@@ -40,13 +40,13 @@
       "last_uniques": 7,
       "max_count": 12,
       "max_uniques": 12,
-      "sum_count": 229
+      "sum_count": 227
     }
   },
   "last_7d": {
     "samples": 8,
-    "start": "2026-10-09",
-    "end": "2026-10-16",
+    "start": "2026-10-10",
+    "end": "2026-10-17",
     "views": {
       "last_count": 0,
       "last_uniques": 0,
@@ -59,7 +59,7 @@
       "last_uniques": 7,
       "max_count": 8,
       "max_uniques": 7,
-      "sum_count": 50
+      "sum_count": 52
     }
   },
   "trend": [
@@ -390,6 +390,11 @@
     },
     {
       "date": "2026-10-16",
+      "views_uniques": 0,
+      "clones_uniques": 7
+    },
+    {
+      "date": "2026-10-17",
       "views_uniques": 0,
       "clones_uniques": 7
     }
