@@ -17,11 +17,11 @@
       "sum_count": 122
     },
     "clones": {
-      "last_count": 4,
-      "last_uniques": 4,
+      "last_count": 5,
+      "last_uniques": 5,
       "max_count": 49,
       "max_uniques": 32,
-      "sum_count": 1206
+      "sum_count": 1207
     }
   },
   "last_30d": {
@@ -36,11 +36,11 @@
       "sum_count": 14
     },
     "clones": {
-      "last_count": 4,
-      "last_uniques": 4,
+      "last_count": 5,
+      "last_uniques": 5,
       "max_count": 10,
       "max_uniques": 10,
-      "sum_count": 201
+      "sum_count": 202
     }
   },
   "last_7d": {
@@ -55,11 +55,11 @@
       "sum_count": 4
     },
     "clones": {
-      "last_count": 4,
-      "last_uniques": 4,
+      "last_count": 5,
+      "last_uniques": 5,
       "max_count": 9,
       "max_uniques": 8,
-      "sum_count": 56
+      "sum_count": 57
     }
   },
   "trend": [
@@ -431,7 +431,7 @@
     {
       "date": "2026-10-24",
       "views_uniques": 1,
-      "clones_uniques": 4
+      "clones_uniques": 5
     }
   ]
 }
